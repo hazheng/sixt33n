@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:sixt33n_shield-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -36,7 +37,7 @@ U 1 1 5C469DC8
 P 6400 3150
 F 0 "J?" H 6478 3191 50  0000 L CNN
 F 1 "CONN_01X02" H 6478 3100 50  0000 L CNN
-F 2 "" H 6400 3150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6400 3150 50  0001 C CNN
 F 3 "" H 6400 3150 50  0001 C CNN
 	1    6400 3150
 	1    0    0    -1  
@@ -87,7 +88,7 @@ F 3 "~" H 6100 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 6800 4050 0    50   ~ 0
-TODO: Choose a specific FET, so far it's just a generic TO-220 NMOS\n
+TODO: Choose a specific FET, so far it's just a generic TO-220 NMOS (Ideally > 10A Ids, and Vth around 2V).\n
 $Comp
 L Device:R R?
 U 1 1 5C46A306
@@ -181,7 +182,7 @@ Connection ~ 4550 3450
 Wire Wire Line
 	4550 3450 4550 3800
 Text Notes 6800 4200 0    50   ~ 0
-TODO: Choose a diode, somewhat arbitrarily chsoe DO-15\n
+TODO: Choose a diode, somewhat arbitrarily chose DO-15 (legacy uses \nIN4001) 
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5C46CFB6
