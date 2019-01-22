@@ -52,19 +52,6 @@ F 3 "~" H 3300 3250 50  0001 C CNN
 	1    3300 3250
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C469FA3
-P 3300 3550
-F 0 "#PWR?" H 3300 3300 50  0001 C CNN
-F 1 "GND" H 3305 3377 50  0000 C CNN
-F 2 "" H 3300 3550 50  0001 C CNN
-F 3 "" H 3300 3550 50  0001 C CNN
-	1    3300 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 3550 3300 3400
 Wire Wire Line
 	3000 2950 3300 2950
 Wire Wire Line
@@ -123,32 +110,8 @@ F 3 "~" H 5500 5200 50  0001 C CNN
 	1    5500 5200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C46A420
-P 4550 4450
-F 0 "#PWR?" H 4550 4200 50  0001 C CNN
-F 1 "GND" H 4555 4277 50  0000 C CNN
-F 2 "" H 4550 4450 50  0001 C CNN
-F 3 "" H 4550 4450 50  0001 C CNN
-	1    4550 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C46A457
-P 6200 5450
-F 0 "#PWR?" H 6200 5200 50  0001 C CNN
-F 1 "GND" H 6205 5277 50  0000 C CNN
-F 2 "" H 6200 5450 50  0001 C CNN
-F 3 "" H 6200 5450 50  0001 C CNN
-	1    6200 5450
-	1    0    0    -1  
-$EndComp
 Text Notes 1700 4200 0    50   ~ 0
 DIN 0207 THT, seems to be what the labs stock\n
-Wire Wire Line
-	5500 5350 5500 5450
 Wire Wire Line
 	5500 5050 5500 5000
 Wire Wire Line
@@ -158,8 +121,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 4000 4250 4000
 Wire Wire Line
-	4050 4450 4050 4350
-Wire Wire Line
 	3800 4000 4050 4000
 Connection ~ 4050 4000
 Wire Wire Line
@@ -167,16 +128,6 @@ Wire Wire Line
 Connection ~ 5500 5000
 Wire Wire Line
 	4550 3200 4550 3450
-Wire Wire Line
-	4050 4450 4550 4450
-Wire Wire Line
-	4550 4450 4550 4200
-Connection ~ 4550 4450
-Wire Wire Line
-	6200 5200 6200 5450
-Wire Wire Line
-	6200 5450 5500 5450
-Connection ~ 6200 5450
 $Comp
 L Device:D_Schottky D?
 U 1 1 5C46B576
@@ -231,4 +182,69 @@ Wire Wire Line
 	4550 3450 4550 3800
 Text Notes 6800 4200 0    50   ~ 0
 TODO: Choose a diode, somewhat arbitrarily chsoe DO-15\n
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C46CFB6
+P 6200 5550
+F 0 "#PWR?" H 6200 5350 50  0001 C CNN
+F 1 "GNDPWR" H 6204 5396 50  0000 C CNN
+F 2 "" H 6200 5500 50  0001 C CNN
+F 3 "" H 6200 5500 50  0001 C CNN
+	1    6200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5200 6200 5550
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C46D38D
+P 3300 3650
+F 0 "#PWR?" H 3300 3450 50  0001 C CNN
+F 1 "GNDPWR" H 3304 3496 50  0000 C CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "" H 3300 3600 50  0001 C CNN
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3400 3300 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5C46D781
+P 4050 4550
+F 0 "#PWR?" H 4050 4300 50  0001 C CNN
+F 1 "GND" H 4055 4377 50  0000 C CNN
+F 2 "" H 4050 4550 50  0001 C CNN
+F 3 "" H 4050 4550 50  0001 C CNN
+	1    4050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C46D7FB
+P 5500 5550
+F 0 "#PWR?" H 5500 5300 50  0001 C CNN
+F 1 "GND" H 5505 5377 50  0000 C CNN
+F 2 "" H 5500 5550 50  0001 C CNN
+F 3 "" H 5500 5550 50  0001 C CNN
+	1    5500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5C46D86C
+P 4550 4550
+F 0 "#PWR?" H 4550 4350 50  0001 C CNN
+F 1 "GNDPWR" H 4554 4396 50  0000 C CNN
+F 2 "" H 4550 4500 50  0001 C CNN
+F 3 "" H 4550 4500 50  0001 C CNN
+	1    4550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4200 4550 4550
+Wire Wire Line
+	4050 4350 4050 4550
+Wire Wire Line
+	5500 5350 5500 5550
 $EndSCHEMATC
